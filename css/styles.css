@@ -1,0 +1,205 @@
+/* fuentes */
+
+@font-face {
+    font-family: "Avenir";
+    src: url("../fonts/Avenir-Book.ttf");
+}
+
+/* reseteo */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: inherit;
+}
+
+/* generales */
+
+html {
+    font-size: 20px;
+}
+
+@media (max-width: 440px) {
+    html {
+        font-size: 18px;
+    }
+}
+
+body {
+    font-family: "Avenir", "sans-serif";
+    color: #67666e;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Hero */
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden; 
+}
+
+/* animación */
+
+@keyframes heroAnimation {
+    0% {
+        opacity: 0;
+        animation-timing-function: ease-in;
+    }
+
+    12% {
+        opacity: 1;
+    }
+
+    25% {
+        transform: scale(1.2);
+    }
+
+    75% {
+        opacity: 0;
+        transform: scale(1.1);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.hero div {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+    opacity: 0;
+    animation: heroAnimation 18s infinite;
+}
+
+.hero div:nth-child(1) {
+    background-image: url("../img/Salvi/F-100/_DSC0041.JPG");
+
+}
+
+.hero div:nth-child(2) {
+    background-image: url("../img/Salvi/FR-A265/Terraza\ 3.jpg");
+    animation-delay: 6s;
+}
+
+.hero div:nth-child(3) {
+    background-image: url("../img/Salvi/A-161/DSC02168.JPG");
+    animation-delay: 12s;
+}
+
+.hero .hero-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: none;
+    opacity: 1;
+    width: 30%;
+    height: auto;
+}
+
+.hero .hero-down {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: none;
+    opacity: 1;
+    width: 5%;
+    height: auto;
+}
+
+@media (max-width: 720px) {
+    .hero .hero-logo {
+        width: 60%;
+    }
+    .hero .hero-down {
+        width: 15%;
+    }
+}
+@media (max-width: 440px) {
+    .hero .hero-logo {
+        width: 80%;
+    }
+    .hero .hero-down {
+        width: 20%;
+    }
+}
+
+/* Header */
+
+header {
+    background-color: white;
+    box-shadow: 1.5px 1.5px 4px #b3b3b3;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+    z-index: 1;
+    transition: 600ms all ease-in-out;
+}
+
+header.transparente {
+    background-color: transparent;
+    box-shadow: none;
+}
+
+header img {
+    height: 50px;
+    width: auto;
+}
+
+header nav a {
+    color: #67666e;
+    font-weight: normal;
+    margin-left: 1em;
+    transition: all 300ms ease-in-out;
+}
+
+header.transparente nav a {
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: normal;
+    margin-left: 1em;
+    transition: all 300ms ease-in-out;
+}
+
+header nav a.activo,
+header nav a:hover {
+    color: #a97c50;
+    font-weight: bold;
+}
+
+header.transparente nav a.activo,
+header.transparente nav a:hover {
+    color: white;
+}
+
+/* Layout */
+
+.primera {
+    margin-top: 100vh;
+}
