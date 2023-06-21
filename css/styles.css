@@ -88,7 +88,7 @@ img {
     background-position: center;
     background-repeat: none;
     opacity: 0;
-    animation: heroAnimation 18s infinite;
+    animation: heroAnimation 27s infinite;
 }
 
 .hero div:nth-child(1) {
@@ -98,12 +98,12 @@ img {
 
 .hero div:nth-child(2) {
     background-image: url("../img/Salvi/FR-A265/Terraza\ 3.jpg");
-    animation-delay: 6s;
+    animation-delay: 9s;
 }
 
 .hero div:nth-child(3) {
     background-image: url("../img/Salvi/A-161/DSC02168.JPG");
-    animation-delay: 12s;
+    animation-delay: 18s;
 }
 
 .hero .hero-logo {
