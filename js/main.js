@@ -7,4 +7,8 @@ $(document).ready(function() {
             $('header').addClass('transparente');
         }
     })
+    $('#burger').click(function() {
+        $('#burger').toggleClass('abierto');
+        $('.menu').toggleClass('abierto');
+    })
 })
