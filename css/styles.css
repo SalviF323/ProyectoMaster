@@ -89,6 +89,7 @@ img {
     background-repeat: none;
     opacity: 0;
     animation: heroAnimation 27s infinite;
+
 }
 
 .hero div:nth-child(1) {
@@ -298,6 +299,12 @@ header.transparente nav a:hover {
     margin-top: 100vh;
 }
 
+#pr {
+    display: block;
+    margin-top: -90px;
+    padding-bottom: 90px;
+}
+
 .fila {
     display: flex;
     padding: 2rem 1rem;
@@ -347,4 +354,167 @@ header.transparente nav a:hover {
     .col-25 {
         width: 100%;
     }
+}
+
+/* tipos de flex reutilizables */
+
+.flex-start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-end {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.flex-column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Parallax */
+
+.fila.parallax {
+    background-image: url('../img/Salvi/propiedad5.jpg');
+    background-size: cover;
+    background-repeat: none;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 2rem;
+}
+
+.fila.parallax div {
+    background-color: rgb(255, 255, 255, 0.75);
+    padding: 2rem;
+}
+
+.fila.parallax div p {
+    font-size: 1.5rem;
+    color: blue;
+    text-align: center;
+}
+
+/* Caja de navegación */
+
+.caja-nav img {
+    width: 20%;
+    margin-bottom: 1em;
+}
+
+.caja-nav a {
+    border: 1px solid blue;
+    background-color: white;
+    color: blue;
+    font-size: 1rem;
+    font-weight: normal;
+    padding: 0.5em 1em;
+    border-radius: 0.3em;
+    cursor: pointer;
+    transition: all 400ms ease-in-out;
+}
+.caja-nav a:hover {
+    background-color: blue;
+    color: white;
+}
+
+/* Formulario contacto */
+
+form.contacto {
+    width: 50%;
+}
+
+@media (max-width: 720px) {
+    form.contacto {
+        width: 75%;
+    }
+}
+
+@media (max-width: 440px) {
+    form.contacto {
+        width: 100%;
+    }
+}
+
+form.contacto .fila {
+    padding: 0.8rem;
+}
+
+input {
+    border: none;
+    border-bottom: 1.5px solid blue;
+    font-size: 1rem;
+    padding: 0.5em 1em;
+    width: 100%;
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 2px solid blue
+}
+
+input.usuario {
+    background-image: url("../img/Salvi/usuario.png");
+    background-repeat: no-repeat;
+    background-position:  8px;
+    padding-left: 2em;;
+}
+
+input.email {
+    background-image: url("../img/Salvi/correo-electronico-vacio.png");
+    background-repeat: no-repeat;
+    background-position:  8px;
+    padding-left: 2em;
+}
+
+button {
+    border: none;
+    background-color: blue;
+    color: white;
+    font-size: 1rem;
+    font-weight: normal;
+    padding: 0.5em 1em;
+    border-radius: 0.3em;
+    cursor: pointer;
+    transition: all 400ms ease-in-out;
+}
+button:hover {
+    background-color: rgb(7, 7, 71);
+    color: white
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"] + label::before {
+    content: url("../img/Salvi/grabacion.png");
+    position: relative;
+    top: 3px;
+}
+
+input[type="checkbox"]:checked + label::before {
+    content: url("../img/Salvi/aceptar.png");
 }
