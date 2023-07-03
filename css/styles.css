@@ -40,6 +40,14 @@ img {
     max-width: 100%;
 }
 
+.flex-around {
+    max-width: 100%;
+}
+
+p {
+    margin-bottom: 0.8rem;
+}
+
 /* Hero */
 
 .hero {
@@ -395,6 +403,37 @@ header.transparente nav a:hover {
     align-items: center;
 }
 
+/* Espaciados y margenes  */
+
+.m-t {
+    margin-top: 1rem;
+}
+
+.m-b {
+    margin-bottom: 1rem;
+}
+
+.m-l {
+    margin-left: 1rem;
+}
+
+.m-r {
+    margin-right: 1rem;
+}
+
+.m-t-small {
+    margin-top: 0.5rem;
+}
+.m-b-small {
+    margin-bottom: 0.5rem;
+}
+.m-l-small {
+    margin-left: 0.5rem;
+}
+.m-r-small {
+    margin-right: 0.5rem;
+}
+
 /* Parallax */
 
 .fila.parallax {
@@ -505,6 +544,8 @@ button:hover {
     color: white
 }
 
+/* cambiar el checkbox por imagenes personalizadas en las dos situaciones (tanto clickeada como sin clickear) */
+
 input[type="checkbox"] {
     display: none;
 }
@@ -517,4 +558,39 @@ input[type="checkbox"] + label::before {
 
 input[type="checkbox"]:checked + label::before {
     content: url("../img/Salvi/aceptar.png");
+}
+
+/* Footer */
+
+footer {
+    background-color: #424242;
+}
+
+footer p{
+    color: rgb(255, 255, 255, 0.8);
+}
+
+footer p:first-child {
+    color: #b7b7f3;
+    font-weight: bold;
+}
+
+footer img.rrss {
+    height: 50px;
+}
+
+footer a {
+    font-size: 0.8rem;
+    color: #b7b7f3;
+    transition: all 300ms ease-in-out;
+}
+
+footer a:hover {
+    color: white
+}
+
+footer .copyright {
+    color: rgb(255, 255, 255, 0.8);
+    font-size: 0.8rem;
+    text-align: center;
 }
