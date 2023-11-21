@@ -101,17 +101,17 @@ p {
 }
 
 .hero div:nth-child(1) {
-    background-image: url("../img/Salvi/F-100/_DSC0041.JPG");
+    background-image: url("../img/Salvi/C7/Terraza\ 1.jpg");
 
 }
 
 .hero div:nth-child(2) {
-    background-image: url("../img/Salvi/FR-A265/Terraza\ 3.jpg");
+    background-image: url("../img/Salvi/C8/_DSC0041.JPG");
     animation-delay: 9s;
 }
 
 .hero div:nth-child(3) {
-    background-image: url("../img/Salvi/A-161/DSC02168.JPG");
+    background-image: url("../img/Salvi/C1/DSC02168.JPG");
     animation-delay: 18s;
 }
 
