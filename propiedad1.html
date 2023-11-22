@@ -14,7 +14,7 @@
         <nav>
             <a href="index.html">Inicio</a>
             <a href="ventas.html" class="activo">Ventas</a>
-            <a href="#">Alquiler</a>
+            <a href="alquiler.html">Alquiler</a>
             <a href="contacto.html">Contacto</a>
         </nav>
     </header>
@@ -29,7 +29,7 @@
             <hr>
             <a href="ventas.html">Ventas</a>
             <hr>
-            <a href="#">Alquiler</a>
+            <a href="alquiler.html">Alquiler</a>
             <hr>
             <a href="contacto.html">Contacto</a>
             <hr>
@@ -56,24 +56,27 @@
                 <img class="m-r-small" src="/img/Salvi/patio.png" alt="ejemplo icono patio">
                 si
             </p>
-            <p class="flex-start">
+            <!-- <p class="flex-start">
                 <img class="m-r-small" src="/img/Salvi/dinero.png" alt="icono dinero">
                 185.000 €
-            </p>
+            </p> -->
             <p class="flex-start">
                 <img class="m-r-small" src="/img/Salvi/contrato123.png" alt="icono contrato">
                 Entrega inmediata
+            </p>
+            <p class="flex-end">
+                <button onclick="openMode()">Ver imágenes</button>
             </p>
             
         </div>
         <div class="col-50"></div>
     </div>
     <div class="fila">
-        <div class="col-50">
-            <p>datos adicionales</p>
+        <div class="col-75">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eligendi incidunt magni doloribus deleniti, mollitia cupiditate sit consequuntur aliquam veritatis tenetur aspernatur quo quod ex! At assumenda unde reprehenderit illo veniam corporis quae. In, laborum deleniti alias voluptatibus, iure quam unde impedit ullam vel molestiae cum. Mollitia placeat saepe dolor animi harum explicabo quidem, laboriosam quos adipisci, aliquid vero officia neque earum. Expedita laudantium ea explicabo, optio quidem sapiente. Laboriosam at, praesentium expedita iste reiciendis nemo voluptate. Eaque ad est velit obcaecati exercitationem et ullam accusantium nam necessitatibus magni molestias iure officia, alias iusto reprehenderit facere ex unde saepe veniam aperiam fuga rerum dicta! Quo, hic nulla neque nostrum incidunt ipsum mollitia maxime vitae quae, sapiente iusto consectetur magnam delectus doloribus cumque non repellendus aperiam minus natus. Cumque a minima quo dolorum temporibus. Totam deleniti placeat necessitatibus illum optio cumque repudiandae labore illo, quasi, nemo dicta quo accusamus maxime ipsa alias iste repellendus repellat assumenda voluptatem, voluptates tempore quidem iure? Soluta neque iure expedita dolores dolor minima obcaecati temporibus dicta corrupti reprehenderit voluptatibus quia rerum fugit commodi assumenda iste magni ex, corporis reiciendis autem, architecto, repellat ipsa? Doloremque iste reprehenderit illum voluptatibus veritatis sapiente animi cumque consequatur, laborum tenetur earum eligendi quis, dolores quas. Quia nam autem similique minus dolore.</p>
         </div>
-        <div class="col-50">
-            <p>carrusel de fotos</p>
+        <div class="col-25">
+            <img height="300px" src="img/Salvi/C1/DSC02169.JPG" alt="">
         </div>
     </div>
    
@@ -111,5 +114,50 @@
                 <p class="copyright m-t">&copy;Andalucia-Estates All rights reserved</p>
             </div>
         </footer>
+        <div class="overlay">
+
+        </div>
+        <div class="carrusel">
+            <div class="slide">
+                <img src="img/Salvi/C1/DSC02151.JPG" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/Salvi/C1/DSC02153.JPG" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/Salvi/C1/DSC02150.JPG" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/Salvi/C1/DSC02152.JPG" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/Salvi/C1/DSC02155.JPG" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/Salvi/C1/DSC02158.JPG" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/Salvi/C1/DSC02160.JPG" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/Salvi/C1/DSC02161.JPG" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/Salvi/C1/DSC02163.JPG" alt="">
+            </div>
+            <div class="slide">
+                <img src="img/Salvi/C1/DSC02168.JPG" alt="">
+            </div>
+            <div class="x-carrusel" onclick="closeMode()">
+                <img src="img/x.svg" alt="">
+            </div>
+            <div class="rigth-arrow" onclick="nextSlide()">
+                <img src="img/right.svg" alt="">
+            </div>
+            <div class="left-arrow" onclick="prevSlide()">
+                <img src="img/left.svg" alt="">
+            </div>
+        </div>
+        <script type="text/javascript" src="js/carrusel.js"></script>
 </body>
 </html>
