@@ -661,6 +661,13 @@ footer .copyright {
 
 /* Ficha propiedad */
 
+.adicional {
+    padding-right: 10px;
+    border-bottom: blue solid 3px;
+    border-right: blue solid 3px;
+    border-radius: 10%;
+}
+
 .propiedad {
     margin-top: 80px;
     background-image: url("/img/Salvi/gibraltar-g26a2db9c1_1280.jpg");
@@ -701,8 +708,8 @@ footer .copyright {
 .carrusel {
     position: fixed;
     top: 5vh;
-    left: 5%;
-    width: 90%;
+    left: 15%;
+    width: 70%;
     background-color: rgba(88, 87, 95, 0.72);
     z-index: 100;
     overflow: hidden;
@@ -732,9 +739,6 @@ footer .copyright {
 }
 
 .carrusel .slide img {
-    /* height: 100vh;
-    position: absolute;
-    left: 13%; */
     width: 100%;
 }
 
