@@ -1,13 +1,14 @@
 let overlay = document.querySelector('.overlay');
 let carrusel = document.querySelector('.carrusel');
 let slide = document.querySelectorAll('.carrusel .slide');
-let images = document.querySelector('.carrusel .slide img');
+let images = document.querySelectorAll('.carrusel .slide img');
 let rigth = document.querySelector('.rigth-arrow');
 let left = document.querySelector('.left-arrow');
 let counter = 0;
 
 function loadSlide() {
-    carrusel.style.height = '90vh';
+
+    carrusel.style.height = '90vh';  
     let heightCarrusel = carrusel.offsetHeight;
     for (i=0; i < images.length; i++) {
         if (images[i].offsetHeight < heightCarrusel ) {

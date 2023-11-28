@@ -535,6 +535,17 @@ input.email {
     padding-left: 2em;
 }
 
+input[type="submit"] {
+    border: none;
+    background-color: blue;
+    color: white;
+    font-size: 1rem;
+    font-weight: normal;
+    padding: 0.5em 1em;
+    border-radius: 0.3em;
+    cursor: pointer;
+    transition: all 400ms ease-in-out;
+}
 button {
     border: none;
     background-color: blue;
@@ -771,4 +782,19 @@ footer .copyright {
     justify-content: center;
     align-items: center;
     display: none;
+}
+
+@media (max-width: 550px) {                 /* Cambiar el tamaño de las flechas y la x del carrusel */
+    .carrusel .x-carrusel {
+        width: 30px;
+        height: 30px;
+    }
+    .carrusel .rigth-arrow {
+        width: 30px;
+        height: 30px;
+    }
+    .carrusel .left-arrow {
+        width: 30px;
+        height: 30px;
+    }
 }
